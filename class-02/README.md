@@ -1,10 +1,10 @@
-# Class 2: Links, Images, Tables, Forms and iframes
+# Class 2: Links, Lists, Images, Tables and Forms
 
 **This class the café website grows to three pages:**
 
 | Page | File | You'll practise |
 |---|---|---|
-| Home | `index.html` | **Links**, **lists**, **images**, an **iframe** (map). This is your Class 1 page, upgraded. |
+| Home | `index.html` | **Links**, **lists**, **images**. This is your Class 1 page (with its map), upgraded. |
 | Menu | `menu.html` | **Tables** |
 | Order | `order.html` | **Forms** |
 
@@ -18,15 +18,14 @@ Still no styling. CSS comes in Class 3.
 
 ## Part A: Home page (`index.html`)
 
-Work through **TODO 1 to TODO 8**.
+Work through **TODO 1 to TODO 7**.
 
 Key ideas:
-- **Attributes** add information inside the opening tag: `<a href="menu.html">Menu</a>`
+- **Attributes** (from Class 1) add information inside the opening tag: `<a href="menu.html">Menu</a>`
 - `<header>`, `<main>`, `<section>` and `<footer>` describe the parts of the page. They don't change how it looks.
 - Lists: `<ul>` = bullet list, `<ol>` = numbered list, with `<li>` for each item
 - An image path is **relative** to the HTML file. `images/logo.svg` means "the `images` folder next to this file".
 - **`alt`** text describes an image for people who can't see it, and appears if the image fails to load.
-- An **`<iframe>`** shows another web page inside yours. Always give it a `title`.
 - Special characters: write `&amp;` for &, `&copy;` for ©
 
 ## Part B: Menu table (`menu.html`)
@@ -67,8 +66,7 @@ That's your form data! Each field is sent as `name=value`. Now remove the `name`
 - [ ] All 3 pages open, and the navigation links move between them
 - [ ] All images appear. No broken image icons.
 - [ ] Opening hours are a bulleted list
-- [ ] The map of UNIMAS appears on the Home page
-- [ ] The menu table has a caption, headings, a Drinks and a Food section, and a footer
+- - [ ] The menu table has a caption, headings, a Drinks and a Food section, and a footer
 - [ ] Clicking any form label selects its field
 - [ ] You can't submit the form without a name, a valid email, an item and the checkbox ticked
 - [ ] Submitting shows all your fields in the address bar
@@ -76,7 +74,7 @@ That's your form data! Each field is sent as `name=value`. Now remove the `name`
 
 ## How to submit
 
-Same steps as Class 1: **Source Control → message → Commit → Sync Changes**, check your files on GitHub, then submit the link to your `class-02` folder:
+Same steps as Class 1: **Source Control → message → Commit → Sync Changes**, check your files on GitHub, then paste the link to your `class-02` folder into the **class Google Form**:
 `https://github.com/YOUR-USERNAME/web-programming-lab-2026/tree/main/class-02`
 
 ## Stretch challenges (finished early?)

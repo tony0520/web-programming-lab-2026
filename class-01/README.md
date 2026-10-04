@@ -5,6 +5,7 @@
 - The structure of every web page: `<!DOCTYPE html>`, `<html>`, `<head>`, `<title>`, `<body>`
 - Headings `<h1>`–`<h6>`, paragraphs `<p>`, bold `<strong>` / `<b>`, line breaks `<br>`
 - Comments `<!-- -->`
+- Embedding a Google Map with `<iframe>`, and what **attributes** are
 
 No colours or layout yet. Plain black text is exactly right for today.
 
@@ -32,6 +33,8 @@ Right now the page shows everything on one line. By the end, it will be a proper
 | `<b>` | Bold look only, no extra meaning | `<b>New!</b>` |
 | `<br>` | New line inside a paragraph. No closing tag. | `Line one<br>Line two` |
 | `<!-- -->` | A comment: a note for humans; the browser ignores it | `<!-- TODO -->` |
+| `name="value"` | An **attribute**: extra details inside an opening tag | `width="600"` |
+| `<iframe>` | Shows another web page (a map, a video) inside yours. Needs a closing tag. | `<iframe src="..." title="Map"></iframe>` |
 
 **Remember:**
 - Most tags come in pairs: `<p>` opens, `</p>` closes (note the `/`).
@@ -40,7 +43,12 @@ Right now the page shows everything on one line. By the end, it will be a proper
 
 ## Part A: Café home page
 
-Open `class-01/starter/index.html` and complete **TODO 1 to TODO 8**.
+Open `class-01/starter/index.html` and complete **TODO 1 to TODO 9**.
+
+**Getting an embed code yourself:**
+- Google Maps: search the place → **Share** → **Embed a map** → **Copy HTML**
+- YouTube: open the video → **Share** → **Embed** → copy the code
+- See "refused to connect"? That site blocks being embedded. Use its own Share → Embed code instead.
 
 ## Part B: About me
 
@@ -63,6 +71,7 @@ To view it, right-click `about-me.html` → **Open with Live Server**.
 - [ ] Each day of the opening hours is on its own line
 - [ ] Each line of the address is on its own line
 - [ ] "freshly roasted coffee" and "Closed" are bold
+- [ ] The Google Map of UNIMAS appears below the address
 - [ ] `about-me.html` works and has your name as its heading
 - [ ] You submitted your work (see below)
 
@@ -73,7 +82,7 @@ To view it, right-click `about-me.html` → **Open with Live Server**.
 3. Click **Commit**. If VS Code asks to stage all changes, click **Yes**.
 4. Click **Sync Changes** to upload your work to GitHub. (The first time, a browser may open asking you to sign in to GitHub.)
 5. Open your fork on GitHub and check that your files are in `class-01/starter/`.
-6. Submit the link to your `class-01` folder where your demonstrator asks. It looks like this:
+6. Paste the link to your `class-01` folder into the **class Google Form** (your demonstrator will share the form link). The link looks like this:
    `https://github.com/YOUR-USERNAME/web-programming-lab-2026/tree/main/class-01`
 
 Prefer the terminal?
@@ -90,4 +99,5 @@ git push
 2. **Italics:** Find out the difference between `<em>` and `<i>`. (Hint: it's like `<strong>` and `<b>`.) Use one on your About me page.
 3. **Horizontal line:** Look up `<hr>` and use it to separate the sections on your About me page.
 4. **View source:** Open any website, press **Ctrl + U** (Mac: **Cmd + Option + U**) and find its `<title>` and an `<h1>`.
-5. **Validator:** Paste your HTML into <https://validator.w3.org/#validate_by_input>. Fix any errors it finds.
+5. **Video:** Embed a YouTube video about making coffee on your About me page (YouTube: **Share → Embed**).
+6. **Validator:** Paste your HTML into <https://validator.w3.org/#validate_by_input>. Fix any errors it finds.
