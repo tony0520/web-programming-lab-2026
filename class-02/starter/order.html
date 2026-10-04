@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean &amp; Byte Café | Order</title>
+</head>
+<body>
+  <!-- Same header as index.html (done for you) -->
+  <header>
+    <img src="images/logo.svg" alt="Bean &amp; Byte Café logo" width="80" height="80">
+    <h1>Bean &amp; Byte Café</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Order Ahead</h2>
+    <p>Fill in the form and your order will be ready when you arrive.</p>
+
+    <!--
+      action = where the data is sent. method = how it is sent.
+      method="get" puts the data in the address bar, so we can SEE what the form sends.
+      In Class 5 we change this to action="place-order.php" method="post".
+    -->
+    <form action="order.html" method="get">
+
+      <fieldset>
+        <legend>Your details</legend>
+
+        <!-- Example (done for you). Notice:
+             - for="name" on the label matches id="name" on the input. Click the label to try it!
+             - name="name" is the name the data is sent with
+             - required means the form cannot be sent while this is empty -->
+        <p>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Nur Aisyah" required>
+        </p>
+
+        <!-- TODO 1: Email field. Label "Email", type="email", id and name "email", required -->
+
+
+        <!-- TODO 2: Phone field. Label "Phone", type="tel", id and name "phone" (not required) -->
+
+      </fieldset>
+
+      <!-- TODO 3: Add a new <fieldset> with the <legend> "Your order". Inside it:
+
+           3a. A dropdown: <select> with id and name "item", required.
+               First option: <option value="">-- Choose an item --</option>
+               Then <optgroup label="Drinks"> with Espresso, Latte, Matcha Latte
+               and  <optgroup label="Food">   with Croissant, Blueberry Muffin, Chocolate Cake
+               Each option looks like: <option value="latte">Latte</option>
+
+           3b. Quantity: type="number", id and name "quantity", min="1", max="10", value="1"
+
+           3c. Size: 3 radio buttons that all share name="size":
+               Small, Regular (add checked to make it the default), Large
+               Example:
+                 <input type="radio" id="size-small" name="size" value="small">
+                 <label for="size-small">Small</label>
+
+           3d. Extras: 3 checkboxes, all with name="extras":
+               Extra shot, Oat milk, Whipped cream -->
+
+
+      <!-- TODO 4: Add a new <fieldset> with the <legend> "Pickup". Inside it:
+           - 2 radio buttons with name="pickup_type": Dine in (checked) and Takeaway
+           - Date: type="date", id and name "pickup_date"
+           - Time: type="time", id and name "pickup_time", min="08:00", max="20:00" -->
+
+
+      <!-- TODO 5: Add a new <fieldset> with the <legend> "Anything else?". Inside it:
+           - A <textarea> with id and name "notes", rows="4", cols="40",
+             placeholder="e.g. less sugar, nut allergy"
+           - A required checkbox: id and name "agree", value="yes", with the label
+             "I understand payment is made at the counter." -->
+
+
+      <!-- TODO 6: Add two buttons:
+           <button type="submit">Place order</button>
+           and a reset button with the text "Clear form" -->
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bean &amp; Byte Café · <a href="mailto:hello@beanandbyte.example">hello@beanandbyte.example</a></p>
+  </footer>
+</body>
+</html>
